@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/styles.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span style={{fontSize:60}}>&#9812;</span>
+      <span style={{fontSize:60, backgroundColor:"#aaa"}}>&#9813;</span>
+      <span style={{fontSize:60}}>&#9814;</span>
+      <span style={{fontSize:60, backgroundColor:"#aaa"}}>&#9815;</span>
+      <span style={{fontSize:60}}>&#9816;</span>
+      <span style={{fontSize:60, backgroundColor:"#aaa"}}>&#9817;</span>
+      <span style={{fontSize:60}}>&#9818;</span>
+      <span style={{fontSize:60, backgroundColor:"#aaa"}}>&#9819;</span>
+      <span style={{fontSize:60}}>&#9820;</span>
+      <span style={{fontSize:60, backgroundColor:"#aaa"}}>&#9821;</span>
+      <span style={{fontSize:60}}>&#9822;</span>
+      <span style={{fontSize:60, backgroundColor:"#aaa"}}>&#9823;</span>
     </div>
   );
 }
