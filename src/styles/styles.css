@@ -112,9 +112,101 @@
   margin-top: 15px;
 }
 
+.topmargined180 {
+  margin-top: 180px;
+}
+
 .stats{
   font-size:56px;
   cursor:pointer;
+}
+
+.transformSelectionBlock {
+  position:fixed;
+  width:520px;
+  height:520px;
+  margin:0 auto;
+  background-color:#eee;
+}
+
+.figureSelectRow {
+  display:flex;
+  justify-content:space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectFigureBtn {
+  background-color: #555;
+  color:white;
+  cursor: pointer;
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+}
+.selectFigureBtn:hover {
+  background-color: #ccc;
+  color:black;
+}
+
+.gameStatusInformationBlock {
+  position:fixed;
+  width:520px;
+  height:520px;
+  margin:0 auto;
+  background-color:#ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gameStatusInformationBlockButton {
+  padding: 6px;
+  width: 25%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #444;
+  color: white;
+}
+.gameStatusInformationBlockButton:hover {
+  background-color: black;
+}
+
+.restartGameButton {
+  border: none;
+  background-color: #444;
+  color: white;
+  border-radius: 3px;
+  padding: 3px;
+  cursor: pointer;
+}
+.restartGameButton:hover {
+  background-color: #aaa;
+  color: black;
+}
+
+.timerBlock {
+  width:520px;
+  display:flex;
+  justify-content:space-between;
+}
+.timerBoard {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+.whiteTimerDisplay {
+  background-color: black;
+  color: white;
+  padding: 3px 6px;
+}
+.blackTimerDisplay {
+  padding: 3px 6px;
 }
 
 .lblPlayerMoveSize {

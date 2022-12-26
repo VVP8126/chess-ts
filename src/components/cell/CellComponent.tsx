@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Cell } from "../../models/board/Cell";
-import { FigureNames } from "../../models/figures/Figure";
+import { FigureNames } from "../../models/figures/names/FigureNames";
 import BishopComponent from "../figures/BishopComponent";
 import KingComponent from "../figures/KingComponent";
 import KnightComponent from "../figures/KnightComponent";
@@ -14,11 +14,11 @@ interface CellProps {
   clickCell: (cell: Cell) => void;
 }
 
+// setCheckToKing - not ready
 const CellComponent:FC<CellProps> = ( { cell, selected, clickCell } ) => {
 
   const click = (cell: Cell) => {
     clickCell(cell);
-    // console.log("Selected: " + selected);
   }
 
   return (
@@ -33,7 +33,7 @@ const CellComponent:FC<CellProps> = ( { cell, selected, clickCell } ) => {
       { cell.figure?.name === FigureNames.KNIGHT && <KnightComponent color={cell.figure?.color} /> }
       { cell.figure?.name === FigureNames.ROOK   && <RookComponent   color={cell.figure?.color} /> }
       { cell.figure?.name === FigureNames.PAWN   && <PawnComponent   color={cell.figure?.color} /> }
-      { /**  ({ cell.y };{ cell.x }) */ }
+      { /**  `${cell.y};${cell.x}` */ }
 
     </div>
   );

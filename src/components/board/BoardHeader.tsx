@@ -17,7 +17,7 @@ const BoardHeader:FC<BoardHeaderProps> = ( {currentPlayer, openStats} ) => {
       <div>
         <QueenComponent color={currentPlayer?.color === Colors.WHITE ? Colors.WHITE : Colors.BLACK} />
       </div>
-      <div className="stats" onClick={openStats} title="Statistics">&#8693;</div>
+      <div className="stats" onClick={openStats} title="Statistics">&#8801;</div>
     </div>
   );
 }

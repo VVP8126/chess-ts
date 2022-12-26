@@ -1,5 +1,6 @@
 import { FC } from "react";
-import { Figure, FigureNames } from "../../models/figures/Figure";
+import { Figure } from "../../models/figures/Figure";
+import { FigureNames } from "../../models/figures/names/FigureNames";
 import BishopComponent from "../figures/BishopComponent";
 import KnightComponent from "../figures/KnightComponent";
 import PawnComponent from "../figures/PawnComponent";
